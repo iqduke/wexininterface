@@ -14,10 +14,9 @@ class WeiXinApi(object):
 
 	def __init__(self, grant_type='client_credential'):
 		self.grant_type = grant_type
-		#self.appid = "wx5f6b4a6e01432557"
-		#self.secret ="6c0aa3a72b5b4d5501bc6f922d328cc8"
-		self.appid = "wxabab2668a05c195f"
-		self.secret ="58058c0af7754dfc52e96a025437df5f"
+		
+		self.appid = "appid"
+		self.secret ="secret"
 		self.access_token_url = "https://api.weixin.qq.com/cgi-bin/token?grant_type={self.grant_type}&appid={self.appid}&secret={self.secret}".format(self=self)
 		self.weixin_url_request = WeiXinUrlRequest()
 
